@@ -254,55 +254,6 @@ a:hover{
     object-fit: contain; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
 } 
-/*
-.cards-skill-container{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-.skill-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 3px solid var(--secondary-color);
-    border-radius: 35px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    background-color: white;
-    width: 100%;
-    max-width: 250px;
-    min-height: 250px;
-    padding: 20px;
-    flex: 1;
-}
-
-.skill-card h3{
-    font-weight: 600;
-    margin-bottom: 20px;
-    padding-bottom: 20px ;
-    text-align: center;
-    background-color: white;
-}
-.skill-card p{
-    font-size: 1.1rem;
-    display: flex;
-    align-items: center;
-    width: 50%;
-    gap: 10px;
-    margin-bottom: 7px;
-    background-color: white;
-}
-.skill-card p::before {
-    content: '';
-    display: inline-block;
-    background-image: url('./assets/checkmark-icon.png');
-    background-size: contain; 
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
-    padding-left: 10px;
-    background-color: white;
-}  */
 
 #projects{
     height: 100%;
@@ -367,19 +318,27 @@ a:hover{
 
 #contact{
     height: 100%;
+    width: 40%;
     margin-top: 20px;
+    margin: 0 auto;
 }
-.contact-detail{
+.form-container{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
-.contact-detail img{
-    height: 30px;
+.form-container input,textarea{
+    margin: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
 }
-.contact-detail p{
-    font-size: 1.4rem;
+.submit-btn{
+    background-color: var(--secondary-color);
+}
+.submit-btn:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 footer{
     margin-top: 100px;
